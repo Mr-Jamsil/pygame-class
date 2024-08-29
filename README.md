@@ -1,4 +1,4 @@
-# pygame-class (2-9)
+# pygame-class (2-8)
 
 ## 셋팅
 
