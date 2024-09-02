@@ -1,4 +1,4 @@
-# pygame-class (2-8)
+# pygame-class
 
 ## 셋팅
 
@@ -10,7 +10,7 @@
 
 - 처음 패키지 설치
 ```shell
-pip install pygame-ce
+pip install pygame
 pip install black isort 
 pip freeze > requirements.txt
 ```
