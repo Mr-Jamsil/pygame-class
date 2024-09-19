@@ -1,5 +1,11 @@
 @echo off
 
+REM Check if .venv folder exists and delete it
+if exist ".venv" (
+    echo .venv 폴더를 삭제합니다...
+    rmdir /s /q .venv
+)
+
 REM Create Virtual Environment
 python -m venv .venv
 
