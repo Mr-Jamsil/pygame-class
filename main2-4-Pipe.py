@@ -234,6 +234,18 @@ while running:
     sprites.update()
 
 
+    if bird.check_collision(sprites) and not gameover:
+        gameover = True
+        gamestarted = False
+        GameOverMessage(sprites)
+        pygame.time.set_timer(column_create_event, 0)
+        assets.play_audio("hit")
+
+    for sprite in sprites:
+        if type(sprite) is Column and sprite.is_passed():
+            score.value += 1
+            assets.play_audio("point")
+
     # pygame.time.set_timer(PIPE_SPAWN_EVENT, 0)
 
     pygame.display.flip()
